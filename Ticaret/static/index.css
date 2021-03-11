@@ -1,0 +1,113 @@
+@font-face{
+    font-family: caros;
+    src:url("./caros.woff");
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2.1rem;
+    background-color: black;
+    --font-color:#f9f9f9;
+    --primary-color:#f84464;
+    --font-size:1.7rem;
+    --border-radius:3px;
+}
+*{
+    box-sizing: border-box;
+    color: var(--font-color);
+    font-family: caros;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:1em 2em;
+    align-items: center;
+}
+.nav-link{
+    color: var(--font-color);
+    font-size:var(--font-size);
+    text-decoration: none;
+   
+
+}
+.login{
+    border:2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+
+    transition: background-color .4s ease-in-out;
+}
+.login:hover{
+    background-color:var(--primary-color);
+}
+.options-container{
+    display:flex;
+    align-items: center;
+}
+.options-container a{
+    display: inline-block;
+    margin-left: 1.5rem;
+
+
+}
+.profile{
+    background-color: var(--font-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    
+}
+.profile svg{
+    vertical-align: middle;
+}
+
+.profile svg:last-child {
+    margin-left: 1rem;
+
+}
+
+.hero-container{
+    height: 50rem;
+    background-image: url("https://raw.githubusercontent.com/mahesh-muttinti/React-Ticaret/master/src/assets/body/image.svg");
+    display: flex;
+    justify-content: space-between;
+    text-align: center;   
+    align-items: center;
+    background-size: contain;
+
+    
+}
+.hero-container div:first-child{
+    border-right: 5px solid black;
+
+}
+
+.hero-container div{
+    background-color: rgba(0,0,0,.75);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+
+.p{
+    width: 36ch;
+    margin-top: 0;
+    font-size: 1.5rem;
+
+    
+}
+.btn{
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    width: 20rem;
+    padding:1rem ;
+    border: 0;
+    outline: 0;
+    border-radius: var(--border-radius);
+
+}
